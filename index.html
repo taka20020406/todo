@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todoリスト</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div>
+        <form class="p_todorist_input">
+            <p>Todoリスト作成</p>
+            <label for="イベント名">イベント名<input type="text" id="todo" name="event"></label><br>
+            <label>開始日: <input type="date" id="startDate"></label><br>
+            <label>終了日: <input type="date" id="endDate"></label><br>     
+            <label>優先度:<input type="radio" name="priority" value="低">低</label>
+            <label><input type="radio" name="priority" value="中" checked>中</label>
+            <label><input type="radio" name="priority" value="高">高</label>
+            <button id="submit">送信</button>
+        </form>
+        <table class="p_todorist_output">
+            <thead>
+                <tr>
+                    <th>イベント名</th>
+                    <th>開始日</th>
+                    <th>終了日</th>
+                    <th>優先度</th>
+                    <th>編集</th>
+                    <th>削除</th>
+                </tr>
+            </thead>
+            <tbody class="task_list"></tbody>
+        </table>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
